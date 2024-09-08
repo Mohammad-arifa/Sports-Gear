@@ -45,7 +45,7 @@
      justify-content: space-between;
      align-items: center;
      position: fixed;
-     z-index: 100;
+     z-index: 1000;
      /* box-shadow:inset 5px 5px 20px red, 10px 10px 20px blue; */
      box-shadow: 5px 5px 10px var(--black);
 
@@ -213,3 +213,11 @@
   
   }
  /* nav bar endded here */
+
+ .home{
+   margin-top: 10vh;
+ }
+ .swiper {
+   width: 600px;
+   height: 300px;
+ }
