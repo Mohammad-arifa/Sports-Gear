@@ -1,4 +1,15 @@
  /* nav bar start here */
+ //scroll effect
+//  const nav = document.querySelector('nav');
+//  window.addEventListener('scroll', function () {
+//   const nav = document.querySelector('nav');
+//   if (window.scrollY > 50) {
+//       nav.classList.add('scrolled');
+//   } else {
+//       nav.classList.remove('scrolled');
+//   }
+// });
+
 //animated text 
 // Array of words for rotating sports equipment names
 const words = ["Cricket Kit", "Football Kit", "Tennis Kit", "Basketball Kit", "Hockey Kit"];
@@ -40,26 +51,92 @@ menuIcon.addEventListener('click', function() {
 });
  /* nav bar endded here */
 
-// swipper start here 
- const swiper = new Swiper('.swiper', {
-  // Optional parameters
+//home slider swipper start here 
+// let homeswiper;
+// window.onload = function () {
+ const homeswiper = new Swiper('.homeswiper', {
   direction: 'horizontal',
   loop: true,
-
-  // If we need pagination
+  effect: "cube",
+  keyboard: {
+    enabled: true,
+  },
+  autoplay: {
+    delay: 3000,   
+    disableOnInteraction: false,   
+   },
   pagination: {
     el: '.swiper-pagination',
+    clickable: true,
   },
-
-  // Navigation arrows
+ 
   navigation: {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
   },
+});
+// document.getElementById('know-us-link').addEventListener('click', function () {
+//   if (homeswiper) {
+//     homeswiper.slideTo(1); // Navigates to slide 2 (index starts from 0, so 1 is the second slide)
+//   }
+// });
+// };
 
-  // And if we need scrollbar
-  scrollbar: {
-    el: '.swiper-scrollbar',
+const slidestop = document.querySelector('.homeswiper');
+
+const stopAutoplay = () => {
+  homeswiper.autoplay.stop();
+};
+
+const startAutoplay = () => {
+  homeswiper.autoplay.start();
+};
+
+slidestop.addEventListener('mouseenter', stopAutoplay);
+slidestop.addEventListener('mouseleave', startAutoplay);
+
+slidestop.addEventListener('touchstart', stopAutoplay);
+slidestop.addEventListener('touchend', startAutoplay);
+
+ 
+ //product slider's javascript
+var swiper = new Swiper(".product-swiper", {
+  effect: "coverflow",
+  loop: true,
+  grabCursor: true,
+  centeredSlides: true,
+  slidesPerView: "auto",
+  coverflowEffect: {
+    rotate: 50,
+    stretch: 0,
+    depth: 100,
+    modifier: 1,
+    slideShadows: true,
+  },
+  keyboard: {
+    enabled: true,
+  },
+  autoplay: {
+    delay: 2000,   
+    disableOnInteraction: false,   
+   },
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
   },
 });
+ 
+// AOS javascript initialize  for  Scroll Animation with AOS
+AOS.init({
+  duration: 1000,  // Duration of the animation
+  easing: 'ease-out', // Easing function
+  once: false, // Animation happens every time while scrolling down and up
+});
 
+ 
+
+ 

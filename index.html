@@ -10,6 +10,13 @@
 
   <!-- external link to swiper.js -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+  <!-- external link for cookies font -->
+  <link href="http://fonts.googleapis.com/css?family=Cookie" rel="stylesheet" type="text/css">
+
+  <!-- AOS CSS  for  Scroll Animation with AOS-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
+
   <!-- external link to bootstrap css -->
   <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous"> -->
@@ -21,67 +28,222 @@
 </head>
 
 <body>
-<header> 
-  <nav class="navbar">
-    <!-- logo and animated text section -->
-    <div class="logo-and-text">
-      <div class="logo">
-        <img src="/image/logo1.png" alt="logo">
+  <header>
+    <nav class="navbar">
+      <!-- logo and animated text section -->
+      <div class="logo-and-text">
+        <div class="logo">
+          <img src="/image/logo1.png" alt="logo">
+        </div>
+        <span class="changing-text-outer">
+          <span class="changing-text">Cricket Kit</span>
+        </span>
       </div>
-      <span class="changing-text-outer">
-        <span class="changing-text">Cricket Kit</span>
-      </span>
+
+
+      <ul class="nav-links">
+        <li class="animated-lines"><a href="#Home">Home</a></li>
+        <li class="animated-lines"><a iid="know-us-link">Know us</a></li>
+        <li class="animated-lines"><a href="#Product">Our Products</a></li>
+        <li class="animated-lines"><a href="#Contact">Contact</a></li>
+        <li class="animated-lines"><a href="#Services">Services</a></li>
+        <li class="animated-lines"><a href="#More">More</a></li>
+      </ul>
+
+      <!-- search-bar,cart,login -->
+      <div class="nav-icon">
+        <input type="text" placeholder="search..." class="search-bar">
+        <i class="fas fa-shopping-cart cart-icon"></i>
+        <a href="login.html" style="color: black;"><i class="fas fa-user login-icon"></i></a>
+      </div>
+
+      <div class="menu-icon">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </nav>
+  </header>
+
+  <section id="Home">
+    <div class="swiper homeswiper" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1500">
+      <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide box" data-hash="slide2">
+          <img src="/image/homeimage.jpg" alt="home image">
+          <div class="slide-text">
+            <h1>Sports Gear</h1>
+            <p>We sell a wide range of sports products, including sports equipment, sportswear, uniforms, and other
+              items for both indoor and outdoor activities.</p>
+          </div>
+        </div>
+
+        <div class="swiper-slide box" data-hash="slide2">
+          <img src="image/aboutus.jpg" alt="about us image" id="Know">
+          <div class="slide-text">
+            <h1 id="Know">About Us</h1>
+            <p>"Welcome to Sports Hub, your trusted destination for quality sports equipment and stylish sportswear.
+              We carefully select products that offer great value for your money, ensuring you have everything you need
+              to excel in your athletic pursuits while looking and feeling your best. Enjoy the convenience of home
+              delivery, and rest assured that a small <strong>Commission</strong> on each sale helps us maintain the
+              high
+              standards you expect and continue providing excellent service. Thank you for choosing Sports Hub, where
+              quality,
+              value,and convenience come together."</p>
+          </div>
+        </div>
+
+        <div class="swiper-slide box" data-hash="slide3">
+          <img src="/image/imagehome2.jpg" alt="all india service">
+          <div class="slide-text">
+            <h1>lets'buy</h1>
+            <p> 1.We specialize in selling a wide range of sports products.
+              2.We offer home delivery for your convenience.
+              3.We provide repair services for certain sports equipment.
+              4.Some of our products come with a warranty.
+              5.We also have a physical store for offline shopping.
+              6.We operate as both wholesalers and retailers.
+              7.Products are sourced upon order, and we sell items on behalf of other suppliers (similar to
+              dropshipping), but we maintain strong relationships with our trusted suppliers.
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- If we need pagination -->
+      <div class="swiper-pagination"></div>
+
+      <!-- If we need navigation buttons -->
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+    </div>
+  </section>
+
+  <section id="Product">
+    <h1 class="heading" data-aos="fade-down" data-aos-delay="600" data-aos-duration="1500">our <span>product</span></h1>
+    <div class="swiper product-swiper" data-aos="fade-up-left" data-aos-delay="100" data-aos-duration="1500" data-aos-anchor-placement="top-bottom">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide box">
+          <a href=""><img src="/image/product1.jpg" alt="cricket bat"></a>
+        
+          <div class="product-info">
+            <p>cricket bat</p>
+            <p>₹500</p>
+            <p class="product-action">Buy now</p>
+            <p class="product-action know-more">Know More</p>
+          </div>
+           
+        </div>
+        <div class="swiper-slide box">
+          <a href=""><img src="/image/product2.jpg" alt="running shoes"></a>
+          <div class="product-info ">
+            <p>light weight running shoes</p>
+            <p>₹500</p>
+            <p class="product-action">Buy now</p>
+            <p class="product-action know-more">Know More</p>
+          </div>
+        </div>
+        <div class="swiper-slide box">
+          <a href=""><img src="/image/product3.png" alt="canadian/american football"></a>
+          <div class="product-info">
+            <p>American Football</p>
+            <p>₹500</p>
+            <p class="product-action">Buy now</p>
+            <p class="product-action know-more">Know More</p>
+          </div>
+        </div>
+        <div class="swiper-slide box">
+          <a href=""><img src="/image/product4.png" alt="Cricket ball"></a>
+          <div class="product-info">
+            <p>cricket ball</p>
+            <p>₹500</p>
+            <p class="product-action">Buy now</p>
+            <p class="product-action know-more">Know More</p>
+          </div>
+        </div>
+        <div class="swiper-slide box">
+          <a href=""><img src="/image/product5.jpg" alt="jearsy"></a>
+          <div class="product-info">
+            <p>jersey</p>
+            <p>₹500</p>
+            <p class="product-action">Buy now</p>
+            <p class="product-action know-more">Know More</p>
+          </div>
+        </div>
+        <div class="swiper-slide box">
+          <a href=""><img src="/image/product6.jpg" alt="more"></a>
+          <div class="product-info">
+            <p>See more variety</p>
+            <p>₹500</p>
+            <p class="product-action">Buy now</p>
+            <p class="product-action know-more">Know More</p>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-pagination"></div>
+    </div>
+  </section>
+
+
+
+
+
+  <!-- Footer HTML -->
+  <footer class="footer-distributed" data-aos="fade-up" data-aos-delay="600" data-aos-duration="1500">
+    <div class="footer-left">
+      <img src="/image/logo1.png" alt="logo">
+      <h3>Sportz<span>Gear</span></h3>
+      <p class="footer-links">
+        <a href="#">Home</a>
+        |
+        <a href="#">About</a>
+        |
+        <a href="#">Contact</a>
+      </p>
+      <p class="footer-company-name">Copyright © 2024 <strong>Sportz Gear</strong> All rights reserved</p>
     </div>
 
+    <div class="footer-center">
+      <div>
+        <i class="fa fa-map-marker"></i>
+        <p><span>Maharashtra</span> Mumbai</p>
+      </div>
+      <div>
+        <i class="fa fa-phone"></i>
+        <p>+91 9876543210</p>
+      </div>
+      <div>
 
-    <!-- search-bar,cart,login -->
-    <ul class="nav-links">
-      <li class="animated-lines"><a href="">Home</a></li>
-      <li class="animated-lines"><a href="">Know us</a></li>
-      <li class="animated-lines"><a href="">Our Products</a></li>
-      <li class="animated-lines"><a href="">Contact</a></li>
-      <li class="animated-lines"><a href="">Services</a></li>
-      <li class="animated-lines"><a href="">More</a></li>
-    </ul>
-    <div class="nav-icon">
-      <input type="text" placeholder="search..." class="search-bar">
-      <i class="fas fa-shopping-cart cart-icon"></i>
-      <i class="fas fa-user login-icon"></i>
+        <p><a href="mailto:sportzgear@gmail.com">sportzgear@gmail.com</a></p>
+      </div>
     </div>
 
-    <div class="menu-icon">
-      <span></span>
-      <span></span>
-      <span></span>
+    <div class="footer-right">
+      <p class="footer-company-about">
+        <span>About the company</span>
+        Welcome to <strong>Sportz-Gear</strong>, your go-to source for premium sports gear and equipment. We offer a
+        wide range of products to help you excel in your sport. Join us and elevate your game with the best in the
+        industry!
+      </p>
+      <div class="footer-icons">
+        <a href="#"><i class="fab fa-facebook"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-linkedin"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-youtube"></i></a>
+      </div>
+
     </div>
-  </nav>
-</header>
-
-<section class="home">
-
-<div class="swiper">
-  <div class="swiper-wrapper">
-    <!-- Slides -->
-    <div class="swiper-slide">Slide 1</div>
-    <div class="swiper-slide">Slide 2</div>
-    <div class="swiper-slide">Slide 3</div>
-    ...
-  </div>
-  <!-- If we need pagination -->
-  <div class="swiper-pagination"></div>
-
-  <!-- If we need navigation buttons -->
-  <div class="swiper-button-prev"></div>
-  <div class="swiper-button-next"></div>
-
-  <!-- If we need scrollbar -->
-  <div class="swiper-scrollbar"></div>
-</div>
-</section>
+  </footer>
 
 
   <!-- external link to the javascript of swipper.js -->
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+
+  <!-- AOS CSS  for  Scroll Animation with AOS-->
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
 
   <!-- link to javascript -->
   <script src="script.js"></script>
