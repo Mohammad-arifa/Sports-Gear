@@ -29,24 +29,41 @@
 
 <body>
   <header>
+
+    <!-- navigation bar and logo is here -->
+
     <nav class="navbar">
       <!-- logo and animated text section -->
+
       <div class="logo-and-text">
         <div class="logo">
-          <img src="/image/logo1.png" alt="logo">
+          <img src="image/logo1.png" alt="logo">
         </div>
         <span class="changing-text-outer">
           <span class="changing-text">Cricket Kit</span>
         </span>
       </div>
 
+      <!-- navlinks is here -->
 
       <ul class="nav-links">
         <li class="animated-lines"><a href="#Home">Home</a></li>
-        <li class="animated-lines"><a iid="know-us-link">Know us</a></li>
-        <li class="animated-lines"><a href="#Product">Our Products</a></li>
+        
+        <li class="animated-lines"><a href="">Know us</a></li>
+        
+        <li class="animated-lines arif"><a href="#Product">Our Products&#9662;</a>
+          <ul class="dropdown">
+            <li><a href="#sports-equipment">Sports Equipment</a></li>
+            <li><a href="#kids-toys">Kids' Toys</a></li>
+            <li><a href="#clothing">Clothing</a></li>
+            <li><a href="#accessories">Accessories</a></li>
+          </ul>
+        </li>
+        
         <li class="animated-lines"><a href="#Contact">Contact</a></li>
+        
         <li class="animated-lines"><a href="#Services">Services</a></li>
+        
         <li class="animated-lines"><a href="#More">More</a></li>
       </ul>
 
@@ -57,6 +74,8 @@
         <a href="login.html" style="color: black;"><i class="fas fa-user login-icon"></i></a>
       </div>
 
+      <!-- 3 dash menu icon open and close button -->
+
       <div class="menu-icon">
         <span></span>
         <span></span>
@@ -66,11 +85,15 @@
   </header>
 
   <section id="Home">
+
     <div class="swiper homeswiper" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1500">
+
       <div class="swiper-wrapper">
-        <!-- Slides -->
-        <div class="swiper-slide box" data-hash="slide2">
-          <img src="/image/homeimage.jpg" alt="home image">
+
+        <!-- Slides of home ,about us etc -->
+
+        <div class="swiper-slide box1" data-hash="slide2">
+          <img src="image/homeimage.jpg" alt="home image">
           <div class="slide-text">
             <h1>Sports Gear</h1>
             <p>We sell a wide range of sports products, including sports equipment, sportswear, uniforms, and other
@@ -78,7 +101,7 @@
           </div>
         </div>
 
-        <div class="swiper-slide box" data-hash="slide2">
+        <div class="swiper-slide box1" data-hash="slide2">
           <img src="image/aboutus.jpg" alt="about us image" id="Know">
           <div class="slide-text">
             <h1 id="Know">About Us</h1>
@@ -93,8 +116,8 @@
           </div>
         </div>
 
-        <div class="swiper-slide box" data-hash="slide3">
-          <img src="/image/imagehome2.jpg" alt="all india service">
+        <div class="swiper-slide box1" data-hash="slide3">
+          <img src="image/home3.webp" alt="all india service">
           <div class="slide-text">
             <h1>lets'buy</h1>
             <p> 1.We specialize in selling a wide range of sports products.
@@ -108,6 +131,7 @@
             </p>
           </div>
         </div>
+
       </div>
       <!-- If we need pagination -->
       <div class="swiper-pagination"></div>
@@ -115,26 +139,33 @@
       <!-- If we need navigation buttons -->
       <div class="swiper-button-prev"></div>
       <div class="swiper-button-next"></div>
+
     </div>
   </section>
 
+  <!-- our product section starts here -->
+
   <section id="Product">
-    <h1 class="heading" data-aos="fade-down" data-aos-delay="600" data-aos-duration="1500">our <span>product</span></h1>
-    <div class="swiper product-swiper" data-aos="fade-up-left" data-aos-delay="100" data-aos-duration="1500" data-aos-anchor-placement="top-bottom">
+    <!-- our first product slider starts here -->
+    <h1 class="heading" data-aos="fade-down" data-aos-delay="100" data-aos-duration="1500">our <span
+        style="color: var(--white);">product</span></h1>
+
+    <div class="swiper product-swiper">
+
       <div class="swiper-wrapper">
-        <div class="swiper-slide box">
-          <a href=""><img src="/image/product1.jpg" alt="cricket bat"></a>
-        
+
+        <div class="swiper-slide product-box">
+          <a href=""><img src="image/product1.jpg" alt="cricket bat"></a>
           <div class="product-info">
             <p>cricket bat</p>
             <p>₹500</p>
             <p class="product-action">Buy now</p>
             <p class="product-action know-more">Know More</p>
           </div>
-           
         </div>
-        <div class="swiper-slide box">
-          <a href=""><img src="/image/product2.jpg" alt="running shoes"></a>
+
+        <div class="swiper-slide product-box">
+          <a href=""><img src="image/product2.jpg" alt="running shoes"></a>
           <div class="product-info ">
             <p>light weight running shoes</p>
             <p>₹500</p>
@@ -142,8 +173,9 @@
             <p class="product-action know-more">Know More</p>
           </div>
         </div>
-        <div class="swiper-slide box">
-          <a href=""><img src="/image/product3.png" alt="canadian/american football"></a>
+
+        <div class="swiper-slide product-box">
+          <a href=""><img src="image/product3.png" alt="canadian/american football"></a>
           <div class="product-info">
             <p>American Football</p>
             <p>₹500</p>
@@ -151,8 +183,9 @@
             <p class="product-action know-more">Know More</p>
           </div>
         </div>
-        <div class="swiper-slide box">
-          <a href=""><img src="/image/product4.png" alt="Cricket ball"></a>
+
+        <div class="swiper-slide product-box">
+          <a href=""><img src="image/product4.png" alt="Cricket ball"></a>
           <div class="product-info">
             <p>cricket ball</p>
             <p>₹500</p>
@@ -160,8 +193,9 @@
             <p class="product-action know-more">Know More</p>
           </div>
         </div>
-        <div class="swiper-slide box">
-          <a href=""><img src="/image/product5.jpg" alt="jearsy"></a>
+
+        <div class="swiper-slide product-box">
+          <a href=""><img src="image/product5.jpg" alt="jearsy"></a>
           <div class="product-info">
             <p>jersey</p>
             <p>₹500</p>
@@ -169,8 +203,9 @@
             <p class="product-action know-more">Know More</p>
           </div>
         </div>
-        <div class="swiper-slide box">
-          <a href=""><img src="/image/product6.jpg" alt="more"></a>
+
+        <div class="swiper-slide product-box">
+          <a href=""><img src="image/product6.jpg" alt="more"></a>
           <div class="product-info">
             <p>See more variety</p>
             <p>₹500</p>
@@ -178,21 +213,440 @@
             <p class="product-action know-more">Know More</p>
           </div>
         </div>
+
       </div>
+
       <div class="swiper-button-prev"></div>
       <div class="swiper-button-next"></div>
       <div class="swiper-pagination"></div>
+
+    </div>
+
+    <!-- product slider 2 slider -->
+
+    <div class="swiper  product_slider_2 ">
+
+      <div class="swiper-wrapper">
+
+        <div class="swiper-slide product-box">
+          <a href=""><img src="image/product-S2-basketball.jpg" alt="jearsy"></a>
+          <div class="product-info">
+            <p>basket ball</p>
+            <p>₹500</p>
+            <p class="product-action"><a href="">buy now</a></p>
+            <p class="product-action know-more"><a href="">Know more</a></>
+          </div>
+        </div>
+
+        <div class="swiper-slide product-box">
+          <a href=""><img src="image/product-S2-football.jpg" alt="jearsy"></a>
+          <div class="product-info">
+            <p>football</p>
+            <p>₹500</p>
+            <p class="product-action"><a href="">buy now</a></p>
+            <p class="product-action know-more"><a href="">Know more</a></>
+          </div>
+        </div>
+
+        <div class="swiper-slide product-box">
+          <a href=""><img src="image/product-S2-hball.jpg" alt="jearsy"></a>
+          <div class="product-info">
+            <p>hockey ball</p>
+            <p>₹500</p>
+            <p class="product-action"><a href="">buy now</a></p>
+            <p class="product-action know-more"><a href="">Know more</a></>
+          </div>
+        </div>
+
+        <div class="swiper-slide product-box">
+          <a href=""><img src="image/product-S2-hockeybat.jpg" alt="jearsy"></a>
+          <div class="product-info">
+            <p>hockey bat</p>
+            <p>₹500</p>
+            <p class="product-action"><a href="">buy now</a></p>
+            <p class="product-action know-more"><a href="">Know more</a></>
+          </div>
+        </div>
+
+        <div class="swiper-slide product-box">
+          <a href=""><img src="image/product-S2-racket2.jpg" alt="jearsy"></a>
+          <div class="product-info">
+            <p>racket bat</p>
+            <p>₹500</p>
+            <p class="product-action"><a href="">buy now</a></p>
+            <p class="product-action know-more"><a href="">Know more</a></>
+          </div>
+        </div>
+
+        <div class="swiper-slide product-box">
+          <a href=""><img src="image/product-S2-shuttel1.jpg" alt="jearsy"></a>
+          <div class="product-info">
+            <p>shutter</p>
+            <p>₹500</p>
+            <p class="product-action"><a href="">buy now</a></p>
+            <p class="product-action know-more"><a href="">Know more</a></>
+          </div>
+        </div>
+
+        <div class="swiper-slide product-box">
+          <a href=""><img src="image/product-S2-tracket2.jpg" alt="jearsy"></a>
+          <div class="product-info">
+            <p>tracket</p>
+            <p>₹500</p>
+            <p class="product-action"><a href="">buy now</a></p>
+            <p class="product-action know-more"><a href="">Know more</a></>
+          </div>
+        </div>
+
+
+      </div>
+
+      <div class="swiper-pagination"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+    </div>
+
+
+
+    <!-- categories here or product 3 slider -->
+    <h1 class="heading" data-aos="fade-down" data-aos-duration="1500">Find by <span
+        style="color: var(--white);">categories</span></h1>
+
+    <div class="swiper categories">
+
+      <div class="swiper-wrapper">
+
+        <div class="swiper-slide">
+          <div class="grid-div">
+            <a href="" class="image-1">
+              <img src="image/grid-div-1-redball.jpg" alt="Red Ball">
+            </a>
+            <a href="" class="image-2">
+              <img src="image/grid-div-1-shuttel4.jpg" alt="Shuttle">
+            </a>
+            <a href="" class="image-3">
+              <img src="image/grid-div-1tennisball.jpg" alt="Tennis Ball">
+            </a>
+            <a href="" class="image-4">
+              <img src="image/grid-div-1racket.jpg" alt="Racket">
+            </a>
+            <a href="" class="image-5">
+              <img src="image/cricketbat2.jpg" alt="Cricket Bat">
+            </a>
+            <a href="" class="image-6">
+              <img src="image/football2.jpg" alt="Football">
+            </a>
+          </div>
+          <div class="slide-text">
+            <p>Sports Equipment and Accessories:</p>
+            <p>Ace your game with this racket.</p>
+          </div>
+          <p class="product-action">Buy now</p>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="grid-div">
+            <a href="" class="image-1">
+              <img src="image/grid-shoes1.jpg" alt="Red Ball">
+            </a>
+            <a href="" class="image-2">
+              <img src="image/grid-shoes2.jpg" alt="Shuttle">
+            </a>
+            <a href="" class="image-3">
+              <img src="image/grid-shoes3.jpg" alt="Tennis Ball">
+            </a>
+            <a href="" class="image-4">
+              <img src="image/grid-shoes4.jpg" alt="Racket">
+            </a>
+            <a href="" class="image-5">
+              <img src="image/grid-shoes5.jpg" alt="Cricket Bat">
+            </a>
+            <a href="" class="image-6">
+              <img src="image/grid-shoes6.jpg" alt="Football">
+            </a>
+          </div>
+          <div class="slide-text">
+            <p>High-Performance Running Shoes:</p>
+            <p>Elevate your running experience with these shoes.</p>
+          </div>
+          <p class="product-action">Buy now</p>
+          </p>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="grid-div">
+            <a href="" class="image-1">
+              <img src="image/grid-div-3-gymbag.jpg" alt="gym bag">
+            </a>
+            <a href="" class="image-2">
+              <img src="image/grid-div-3-elastic.jpg" alt="elastic">
+            </a>
+            <a href="" class="image-3">
+              <img src="image/grid-div-3-hand.jpg" alt="hand grip">
+            </a>
+            <a href="" class="image-4">
+              <img src="image/grid-div-3-rope.jpg" alt="rope">
+            </a>
+            <a href="" class="image-5">
+              <img src="image/grid-div-3-tracer.jpg" alt="runnner tarcer">
+            </a>
+            <a href="" class="image-6">
+              <img src="image/gird-div-3-weight.jpg" alt="weight lifting">
+            </a>
+          </div>
+          <div class="slide-text">
+            <p>Gym Products:</p>
+            <p>Carry your gym essentials in style.</p>
+          </div>
+          <p class="product-action">Buy now</p>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="grid-div">
+            <a href="" class="image-1">
+              <img src="image/grid-div-4-babyhockey.jpg" alt="hockey for child">
+            </a>
+            <a href="" class="image-2">
+              <img src="image/grid-div-4-balls.jpg" alt="toy balls">
+            </a>
+            <a href="" class="image-3">
+              <img src="image/grid-div-4-toys.jpg" alt="different ba;;s">
+            </a>
+            <a href="" class="image-4">
+              <img src="image/grid-div-4-zoom.jpg" alt="door bin">
+            </a>
+            <a href="" class="image-5">
+              <img src="image/grid-div-4-toyset.jpg" alt="toy set">
+            </a>
+            <a href="" class="image-6">
+              <img src="image/grid-div-4-toyset2.jpg" alt="toy set">
+            </a>
+          </div>
+          <div class="slide-text">
+            <p>Kids Sports Gear:</p>
+            <p>Stay cool and stylish during workouts.</p>
+          </div>
+          <p class="product-action">Buy now</p>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="grid-div">
+            <a href="" class="image-1">
+              <img src="image/grid-div-5-teniscourt.jpeg" alt="Red Ball">
+            </a>
+            <a href="" class="image-2">
+              <img src="image/grid-shoes2.jpg" alt="Shuttle">
+            </a>
+            <a href="" class="image-3">
+              <img src="image/grid-shoes3.jpg" alt="Tennis Ball">
+            </a>
+            <a href="" class="image-4">
+              <img src="image/grid-shoes4.jpg" alt="Racket">
+            </a>
+            <a href="" class="image-5">
+              <img src="image/grid-shoes5.jpg" alt="Cricket Bat">
+            </a>
+            <a href="" class="image-6">
+              <img src="image/grid-shoes6.jpg" alt="Football">
+            </a>
+          </div>
+          <div class="slide-text">
+            <p>Playground, Turf for Rent</p>
+          </div>
+          <p class="product-action">Rent now</p>
+        </div>
+
+
+        <div class="swiper-slide">
+          <div class="grid-div">
+            <a href="" class="image-1">
+              <img src="image/grid-div-6-criketuniform.jpg" alt="criket set / uniforms">
+            </a>
+            <a href="" class="image-2">
+              <img src="image/grid-shoes2.jpg" alt="Shuttle">
+            </a>
+            <a href="" class="image-3">
+              <img src="image/grid-shoes3.jpg" alt="Tennis Ball">
+            </a>
+            <a href="" class="image-4">
+              <img src="image/grid-shoes4.jpg" alt="Racket">
+            </a>
+            <a href="" class="image-5">
+              <img src="image/grid-shoes5.jpg" alt="Cricket Bat">
+            </a>
+            <a href="" class="image-6">
+              <img src="image/grid-shoes6.jpg" alt="Football">
+            </a>
+          </div>
+          <div class="slide-text">
+            <p>Sports Dress and Uniform:</p>
+            <p>Stay cool and stylish during workouts.</p>
+          </div>
+          <p class="product-action">Buy now</p>
+        </div>
+
+
+        <div class="swiper-slide">
+          <div class="grid-div">
+            <a href="" class="image-1">
+              <img src="image/grid-div-7-chessboard.jpg" alt="Red Ball">
+            </a>
+            <a href="" class="image-2">
+              <img src="image/grid-div-7-scrabble.jpg" alt="Shuttle">
+            </a>
+            <a href="" class="image-3">
+              <img src="image/grid-div-7-monopoly4.jpg" alt="Tennis Ball">
+            </a>
+            <a href="" class="image-4">
+              <img src="image/grid-div-7-jenga.jpg" alt="Racket">
+            </a>
+            <a href="" class="image-5">
+              <img src="image/grid-div-7-carrom.jpg" alt="Cricket Bat">
+            </a>
+            <a href="" class="image-6">
+              <img src="image/grid-div-7-dart.jpg" alt="Football">
+            </a>
+          </div>
+          <div class="slide-text">
+            <p>Indoor games:</p>
+            <p> equipment, such as chess, table tennis, or board games.</p>
+          </div>
+          <p class="product-action">Buy now</p>
+        </div>
+
+
+        <div class="swiper-slide">Slide 8</div>
+
+        <div class="swiper-slide">Slide 9</div>
+
+        <div class="swiper-slide">
+          <div class="sketchfab-embed-wrapper" style="flex: 1; position: relative; width: 100%; text-align: right;">
+            <iframe title="Wooden Cricket Set" frameborder="0" allowfullscreen="false" mozallowfullscreen="false"
+              webkitallowfullscreen="false"
+              src="https://sketchfab.com/models/f67b784159064375a3b13faa1d2f155a/embed?autostart=1&ui_infos=0&ui_hint=0&ui_controls=0&ui_watermark=0&ui_inspector=0&ui_vr=0&ui_annotations=0"
+              style="width: 400px; height: 400px; border: none; float: right;"></iframe>
+            <div style="position: absolute; bottom: 0; left: 0; width: 100%; height: 50px; background: white;"></div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="swiper-pagination"></div>
+
+    </div>
+
+  </section>
+
+
+  <!-- here is the contact from or feedback form the feedback will be received in email -->
+  <section id="Contact">
+
+    <h1 class="heading" data-aos="fade-down" data-aos-duration="300"><span style="color: var(--white);">Contact us /
+        Feedback / our offline shop details</span></h1>
+
+    <div class="container">
+      <div class="form">
+        <form action="https://formspree.io/f/mblrbnnz" method="POST">
+          <h2><b>Get in touch</b></h2>
+          <h3>
+            <p>We're here to try to help you!</p>
+          </h3>
+          <br>
+          <p>Have questions? Reach out to us anytime.</p><br>
+
+          <p><label for="name">Name <span class="asterick">*</span></label></p>
+          <input type="text" name="name" id="name" placeholder="your name" pattern="[A-Za-z\s]+"
+            title="Only letters and spaces allowed" required>
+
+
+          <p><label for="email">Email address <span class="asterick">*</span></label></p>
+          <input type="email" name="email" id="email" placeholder="email@browser.com" required>
+
+          <p><label for="phone">Phone number <span class="asterick">*</span></label></p>
+          <input type="tel" name="phone" id="phone" placeholder="999-999-9999" pattern="\d{3}\d{3}\d{4}"
+            title="Phone number format: 555-555-5555" required>
+
+          <p><label for="message">Message</label></p>
+          <textarea name="message" id="message" rows="5" placeholder="Write your message here..." required></textarea>
+
+          <!-- CSRF Token -->
+          <input type="hidden" name="csrf_token" value="your-generated-csrf-token-here">
+
+          <p><input type="checkbox" name="consent" required class="consent"> I allow this website to store my submission
+            so they can respond to my inquiry.
+            <span class="asterick">*</span>
+          </p>
+
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+
+      <div class="map">
+        <h2>Location</h2>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30133.617143881456!2d72.8380878758369!3d19.25180871344495!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7a8261bedd511%3A0x6eff7d8bc9ebde9c!2sDahisar%2C%20Mhatre%20Wadi%2C%20Dahisar%20West%2C%20Mumbai%2C%20Maharashtra%20400068!5e0!3m2!1sen!2sin!4v1727193458009!5m2!1sen!2sin"
+          width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+        <div class="info">
+          <h4><b>Get in touch</b></h4>
+          <a href="mailto:sportzgear01@gmail.com"><i class="fa-regular fa-envelope"></i> sportzgear01@gmail.com</a>
+
+          <a href="https://www.google.com/maps/place/Dahisar,+Mumbai,+Maharashtra/" target="_blank"><i
+              class="fa-solid fa-location-dot"></i>Mumbai, Dahisar Thane-401107</a>
+        </div>
+
+        <div class="hours">
+          <h3>Working Hours</h3>
+          <table>
+            <thead>
+              <tr>
+                <th>Day</th>
+                <th>Hours</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Monday</td>
+                <td>9 AM - 10 PM</td>
+              </tr>
+              <tr>
+                <td>Tuesday</td>
+                <td>9 AM - 10 PM</td>
+              </tr>
+              <tr>
+                <td>Wednesday</td>
+                <td>9 AM - 10 PM</td>
+              </tr>
+              <tr>
+                <td>Thursday</td>
+                <td>9 AM - 10 PM</td>
+              </tr>
+              <tr>
+                <td>Friday</td>
+                <td>9 AM - 12:30 PM</td>
+              </tr>
+              <tr>
+                <td>Saturday</td>
+                <td>9 AM - 10 PM</td>
+              </tr>
+              <tr>
+                <td>Sunday</td>
+                <td>9 AM - 10 PM</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
     </div>
   </section>
 
 
 
-
-
   <!-- Footer HTML -->
-  <footer class="footer-distributed" data-aos="fade-up" data-aos-delay="600" data-aos-duration="1500">
+  <footer class="footer-distributed">
     <div class="footer-left">
-      <img src="/image/logo1.png" alt="logo">
+      <img src="image/logo1.png" alt="logo">
       <h3>Sportz<span>Gear</span></h3>
       <p class="footer-links">
         <a href="#">Home</a>
